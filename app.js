@@ -10,7 +10,7 @@ hbs.registerPartials(__dirname + '/views/partials', function (err) {});
 // Servir contenido estatico
 
 app.use(express.static('public'));
-
+ 
 app.get('/', function (req, res) {
   res.render('home', {
     nombre: 'Edgar Ramos',
